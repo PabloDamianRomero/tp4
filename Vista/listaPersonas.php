@@ -44,7 +44,7 @@ echo '<div class="container-fluid" id="main-content">
         </div>';
 	}
 }else{
-    echo '<div class="alert alert-danger" role="alert">
+    echo '<div class="alert alert-danger text-center" role="alert">
     No existen personas cargadas en el sistema
 </div>';
 }
