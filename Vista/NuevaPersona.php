@@ -20,7 +20,7 @@ Recordar usar la capa de control antes generada, no se puede acceder directament
             </div>
             <div class="row">
                 <div class="col">
-                    <input type="text" id="nroDni" name="nroDni" class="form-control" placeholder="Ej: 40068425" pattern="[0-9]{7,8}" required>
+                    <input type="text" id="nroDni" name="nroDni" class="form-control" placeholder="Ej: 30875269" pattern="[0-9]{7,8}" required>
                     <div class="invalid-feedback" id="nroDni-text">Ingrese un DNI válido</div>
                 </div>
             </div>
@@ -44,7 +44,7 @@ Recordar usar la capa de control antes generada, no se puede acceder directament
             </div>
             <div class="row">
                 <div class="col">
-                    <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Ej: Garcian" pattern="[a-z A-Z]{1,}" required>
+                    <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Ej: Harman" pattern="[a-z A-Z]{1,}" required>
                     <div class="invalid-feedback" id="nombre-text">Ingrese un nombre válido</div>
                 </div>
             </div>
@@ -68,7 +68,7 @@ Recordar usar la capa de control antes generada, no se puede acceder directament
             </div>
             <div class="row">
                 <div class="col">
-                    <input type="text" id="telefono" name="telefono" class="form-control" placeholder="Ej: 4481263" pattern="[0-9]{6,}" required>
+                    <input type="text" id="telefono" name="telefono" class="form-control" placeholder="Ej: 4488123" pattern="[0-9]{6,}" required>
                     <div class="invalid-feedback" id="telefono-text">Ingrese un teléfono válido</div>
                 </div>
             </div>
@@ -80,7 +80,7 @@ Recordar usar la capa de control antes generada, no se puede acceder directament
             </div>
             <div class="row">
                 <div class="col">
-                    <input type="text" id="domicilio" name="domicilio" class="form-control" placeholder="Ej: Av.Alvear 1500" pattern="[a-z A-Z 0-9]{1,}" required>
+                    <input type="text" id="domicilio" name="domicilio" class="form-control" placeholder="Ej: Santa Fe 98" pattern="[a-z A-Z 0-9]{1,}" required>
                     <div class="invalid-feedback" id="domicilio-text">Ingrese un domicilio válido</div>
                 </div>
             </div>

@@ -23,7 +23,7 @@ control antes generada, no se puede acceder directamente a las clases del ORM.</
             </div>
             <div class="row">
                 <div class="col">
-                    <input type="text" id="nroDni" name="nroDni" class="form-control" placeholder="Ej: 40068425" pattern="[0-9]{7,8}" required>
+                    <input type="text" id="nroDni" name="nroDni" class="form-control" placeholder="Ej: 30875269" pattern="[0-9]{7,8}" required>
                     <div class="invalid-feedback" id="nroDni-text">Ingrese un DNI válido</div>
                 </div>
             </div>
