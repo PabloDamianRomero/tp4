@@ -22,6 +22,8 @@ if (isset($datos['nroDni'])) {
     $objAbmPersona = new AbmPersona();
     $personaBuscada = $objAbmPersona->buscar($datos);
     if (count($personaBuscada) > 0) {
+        $datosTitular = $objAbmPersona->crearArregloParaPersona($personaBuscada[0]); // genero un nuevo arreglo con las claves de la persona para utilizar sus valores en el formulario
+
         echo '<div class="alert alert-success text-center" role="alert">Persona encontrada.</div>';
         echo '<form class="mt-5 mb-5 needs-validation" method="post" action="actualizarDatosPersona.php" style="width:450px; border:white 1px solid; margin:auto" novalidate="">
         <div class="container">
@@ -33,7 +35,7 @@ if (isset($datos['nroDni'])) {
             </div>
             <div class="row">
                 <div class="col">
-                    <input type="text" id="nroDni" name="nroDni" class="form-control" value="'.$datos["nroDni"].'" readonly required>
+                    <input type="text" id="nroDni" name="nroDni" class="form-control" value="'.$datosTitular["nroDni"].'" readonly required>
                 </div>
             </div>
           
@@ -45,7 +47,7 @@ if (isset($datos['nroDni'])) {
             </div>
             <div class="row">
                 <div class="col">
-                    <input type="text" id="apellido" name="apellido" class="form-control" placeholder="Ej: Smith" pattern="[a-z A-Z]{1,}" required>
+                    <input type="text" id="apellido" name="apellido" class="form-control" value="'.$datosTitular["apellido"].'" pattern="[a-z A-Z]{1,}" required>
                     <div class="invalid-feedback" id="apellido-text">Ingrese un apellido válido</div>
                 </div>
             </div>
@@ -57,7 +59,7 @@ if (isset($datos['nroDni'])) {
             </div>
             <div class="row">
                 <div class="col">
-                    <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Ej: Garcian" pattern="[a-z A-Z]{1,}" required>
+                    <input type="text" id="nombre" name="nombre" class="form-control" value="'.$datosTitular["nombre"].'" pattern="[a-z A-Z]{1,}" required>
                     <div class="invalid-feedback" id="nombre-text">Ingrese un nombre válido</div>
                 </div>
             </div>
@@ -69,7 +71,7 @@ if (isset($datos['nroDni'])) {
             </div>
             <div class="row">
                 <div class="col">
-                    <input type="text" id="fechaNac" name="fechaNac" class="form-control" placeholder="Ej: 1997-01-14" pattern="(?:19|20)(?:[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-8])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:29|30))|(?:(?:0[13578]|1[02])-31))|(?:[13579][26]|[02468][048])-02-29)" required>
+                    <input type="text" id="fechaNac" name="fechaNac" class="form-control" value="'.$datosTitular["fechaNac"].'" pattern="(?:19|20)(?:[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-8])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:29|30))|(?:(?:0[13578]|1[02])-31))|(?:[13579][26]|[02468][048])-02-29)" required>
                     <div class="invalid-feedback" id="fechaNac-text">Ingrese una fecha válida</div>
                 </div>
             </div>
@@ -81,7 +83,7 @@ if (isset($datos['nroDni'])) {
             </div>
             <div class="row">
                 <div class="col">
-                    <input type="text" id="telefono" name="telefono" class="form-control" placeholder="Ej: 4481263" pattern="[0-9]{6,}" required>
+                    <input type="text" id="telefono" name="telefono" class="form-control" value="'.$datosTitular["telefono"].'" pattern="[0-9]{6,}" required>
                     <div class="invalid-feedback" id="telefono-text">Ingrese un teléfono válido</div>
                 </div>
             </div>
@@ -93,17 +95,17 @@ if (isset($datos['nroDni'])) {
             </div>
             <div class="row">
                 <div class="col">
-                    <input type="text" id="domicilio" name="domicilio" class="form-control" placeholder="Ej: Av.Alvear 1500" pattern="[a-z A-Z 0-9]{1,}" required>
+                    <input type="text" id="domicilio" name="domicilio" class="form-control" value="'.$datosTitular["domicilio"].'" pattern="[a-z A-Z 0-9]{1,}" required>
                     <div class="invalid-feedback" id="domicilio-text">Ingrese un domicilio válido</div>
                 </div>
             </div>
            
             <div class="row m-3">
-                <div class="col-7"></div>
+                <div class="col-9"></div>
                 <div class="col-3 mb-3 d-flex">
                     <input id="accion" name ="accion" value="editar" type="hidden">
                     <button class="btn btn-primary text-white" type="submit">Modificar</button>
-                    <button class="btn btn-outline-secondary" type="reset">Borrar</button>
+                    
                 </div>
             </div>
             
