@@ -26,7 +26,7 @@ if (isset($datos['nroDni'])) {
 
         echo '<div class="alert alert-success text-center" role="alert">Persona encontrada.</div>';
 
-echo '<form class="card needs-validation" method="POST" action="accionNuevoAuto.php" onSubmit="validarCampos()" novalidate="" style="max-width:400px; margin:auto; padding:20px;">
+echo '<form class="card needs-validation" method="POST" action="accionNuevoAuto.php" novalidate="" style="max-width:400px; margin:auto; padding:20px;">
 <p class="seccion mb-2 text-center bg-secondary text-light">DATOS VEHICULO</p>
 <div class="row">
     <div class="col-6">
