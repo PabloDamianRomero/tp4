@@ -12,7 +12,7 @@ documento) y estos serán enviados a otra página “ActualizarDatosPersona.php�
 persona. Utilizar css y validaciones javaScript cuando crea conveniente. Recordar usar la capa de control
 antes generada, no se puede acceder directamente a las clases del ORM.</p>
 
-<form class="mt-5 mb-5 needs-validation" method="post" action="accion/accionBuscarPersona.php" style="width:400px; border:white 1px solid; margin:auto" novalidate="">
+<form class="mt-5 mb-5 needs-validation" method="post" action="accion/accionBuscarPersona.php" onSubmit="validarCampos()" style="width:400px; border:white 1px solid; margin:auto" novalidate="">
         <div class="container">
             <div class="row">
                 <div class="col">

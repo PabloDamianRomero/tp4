@@ -1,4 +1,4 @@
-function validarCampos($datos){
+function validarCamposBuscar($datos){
     $valid=true;
     $nroDni=document.getElementById("nroDni");
     $nombre=document.getElementById("nombre");

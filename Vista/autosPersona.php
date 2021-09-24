@@ -5,7 +5,7 @@
 <div style="margin-bottom: 20%" class="container-fluid">
 <h3 class="text-center"><?php echo $titulo?></h3>
 
-<form class="mt-5 mb-5 needs-validation" method="post" action="accion/accionBuscarAuto.php" style="width:400px; border:white 1px solid; margin:auto" novalidate="">
+<form class="mt-5 mb-5 needs-validation" method="post" action="accion/accionBuscarAuto.php" onSubmit="validarCampos()" style="width:400px; border:white 1px solid; margin:auto" novalidate="">
         <div class="container">
             <div class="row">
                 <div class="col">

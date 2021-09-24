@@ -25,7 +25,7 @@ if (isset($datos['nroDni'])) {
         $datosTitular = $objAbmPersona->crearArregloParaPersona($personaBuscada[0]); // genero un nuevo arreglo con las claves de la persona para utilizar sus valores en el formulario
 
         echo '<div class="alert alert-success text-center" role="alert">Persona encontrada.</div>';
-        echo '<form class="mt-5 mb-5 needs-validation" method="post" action="actualizarDatosPersona.php" onSubmit="validarCampos('.$datos["nroDni"].')" style="width:450px; border:white 1px solid; margin:auto" novalidate="">
+        echo '<form class="mt-5 mb-5 needs-validation" method="post" action="actualizarDatosPersona.php" onSubmit="validarCamposBuscar('.$datos["nroDni"].')" style="width:450px; border:white 1px solid; margin:auto" novalidate="">
         <div class="container">
         
             <div class="row">
