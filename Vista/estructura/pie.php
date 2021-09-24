@@ -9,5 +9,7 @@
     </footer>
     <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="js/validacion.js"></script>
+    <script src="js/tp4.js"></script>
+    <script src="js/tp4BuscarPersona.js"></script>
 </body>
 </html>
