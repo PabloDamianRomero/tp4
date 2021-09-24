@@ -96,7 +96,6 @@ class AbmAuto
      */
     public function modificacion($param)
     {
-        //echo "Estoy en modificacion";
         $resp = false;
         if ($this->seteadosCamposClaves($param)) {
             $elObjAuto = $this->cargarObjeto($param);
